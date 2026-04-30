@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>World Time Zone Comparison — Compare Any City Times Instantly</title>
+  <meta name="description" content="Compare time zones across multiple cities simultaneously. Find the best meeting time for international teams. Free, fast, no signup required." />
+  <meta name="keywords" content="world time zone comparison, time zone converter, meeting time planner international, UTC offset, international time" />
+  <link rel="canonical" href="https://worldtimezone.tools/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="World Time Zone Comparison" />
+  <meta property="og:description" content="Instantly compare time zones for any city. Perfect for remote teams and international scheduling." />
+  <meta property="og:url" content="https://worldtimezone.tools/" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="World Time Zone Comparison" />
+  <meta name="twitter:description" content="Instantly compare time zones for any city. Perfect for remote teams and international scheduling." />
+
+  <meta name="theme-color" content="#4361ee" />
+  <meta name="theme-color" content="#6080ff" media="(prefers-color-scheme: dark)" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "World Timezone Comparison",
+    "url": "https://worldtimezone.tools",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Web",
+    "offers": { "@type": "Offer", "price": "0" }
+  }
+  </script>
+
+  <!-- Prevent theme flash: apply stored preference before first paint -->
+  <script>(function(){var t=localStorage.getItem('wtt-theme');if(t)document.documentElement.setAttribute('data-theme',t);}());</script>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- AdSense: replace __ADSENSE_CLIENT__ before deploying -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=__ADSENSE_CLIENT__"
+          crossorigin="anonymous"></script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="/" class="site-logo" aria-label="WorldClock — Home">
+          <span class="logo-text">World<strong>Clock</strong></span>
+        </a>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode" aria-pressed="false"></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Top Banner Ad: 728x90 desktop / 320x50 mobile -->
+  <div class="ad-slot ad-slot--banner" role="complementary" aria-label="Advertisement">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="__ADSENSE_CLIENT__"
+         data-ad-slot="__AD_SLOT_BANNER__"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <main class="main-content" id="main">
+    <div class="container">
+
+      <section class="search-section" aria-labelledby="pageHeading">
+        <h1 class="visually-hidden" id="pageHeading">World Timezone Comparison Tool</h1>
+        <div id="searchBox"></div>
+      </section>
+
+      <section class="cards-section" aria-label="Timezone clocks">
+        <div class="cards-grid" id="cardsGrid" role="list"></div>
+
+        <!-- In-feed Ad: shown after 3+ cards -->
+        <div class="ad-slot ad-slot--infeed" role="complementary" aria-label="Advertisement" id="infeedAd" hidden>
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="__ADSENSE_CLIENT__"
+               data-ad-slot="__AD_SLOT_INFEED__"
+               data-ad-format="fluid"
+               data-ad-layout-key="-6t+ed+2i-1n-4w"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+      </section>
+
+      <section class="slider-section" aria-label="Meeting planner">
+        <div id="meetingSlider"></div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Bottom Rectangle Ad: 300x250 -->
+  <div class="ad-slot ad-slot--rectangle" role="complementary" aria-label="Advertisement">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="__ADSENSE_CLIENT__"
+         data-ad-slot="__AD_SLOT_RECT__"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Times update every second. DST is detected automatically using browser APIs.</p>
+      <p class="footer-note">
+        No external APIs, no tracking, no registration required. &nbsp;·&nbsp;
+        <a href="/privacy.html">Privacy Policy</a>
+      </p>
+    </div>
+  </footer>
+
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>
