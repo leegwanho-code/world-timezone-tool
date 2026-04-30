@@ -37,7 +37,7 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="style.css" />
 
-  <!-- AdSense: replace ca-pub-6744073304383561 before deploying -->
+  <!-- AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6744073304383561"
           crossorigin="anonymous"></script>
 </head>
@@ -91,6 +91,61 @@
 
       <section class="slider-section" aria-label="Meeting planner">
         <div id="meetingSlider"></div>
+      </section>
+
+      <section class="how-to-section" aria-labelledby="howToHeading">
+        <h2 id="howToHeading">How to Use</h2>
+        <ol class="how-to-list">
+          <li>
+            <strong>Search for a city</strong> — Type any city name or country in the search box above. Results appear instantly as you type.
+          </li>
+          <li>
+            <strong>Compare times side by side</strong> — Up to 6 city clocks are displayed simultaneously. Each card shows the current local time, date, UTC offset, and whether DST is active.
+          </li>
+          <li>
+            <strong>Plan a meeting</strong> — Drag the Meeting Planner slider to find an overlap that works for all your cities. The slider updates all clocks at once so you can spot conflicts instantly.
+          </li>
+          <li>
+            <strong>Remove a city</strong> — Click the × button on any card to remove it. Your city list is saved automatically for your next visit.
+          </li>
+          <li>
+            <strong>Switch dark / light mode</strong> — Use the toggle in the top-right corner. Your preference is remembered between sessions.
+          </li>
+        </ol>
+      </section>
+
+      <section class="faq-section" aria-labelledby="faqHeading">
+        <h2 id="faqHeading">Frequently Asked Questions</h2>
+        <dl class="faq-list">
+          <div class="faq-item">
+            <dt>Is this tool free to use?</dt>
+            <dd>Yes. WorldClock is completely free, requires no sign-up, and has no usage limits.</dd>
+          </div>
+          <div class="faq-item">
+            <dt>Does it handle Daylight Saving Time (DST) automatically?</dt>
+            <dd>Yes. DST is detected automatically using your browser's built-in <code>Intl</code> API, so times are always accurate regardless of the time of year. Cities currently observing DST show a red <strong>DST</strong> badge.</dd>
+          </div>
+          <div class="faq-item">
+            <dt>How many cities can I compare at once?</dt>
+            <dd>Up to 6 cities can be displayed simultaneously. You can remove any city and add a different one at any time.</dd>
+          </div>
+          <div class="faq-item">
+            <dt>Are my cities saved between visits?</dt>
+            <dd>Yes. Your selected cities and display theme are stored in your browser's local storage. No data is sent to any server.</dd>
+          </div>
+          <div class="faq-item">
+            <dt>What is the Meeting Planner?</dt>
+            <dd>The Meeting Planner is a slider that lets you set a hypothetical time in your reference city and instantly see what time it would be in all other cities. Drag it left or right to scan through the day and find a time that works for everyone.</dd>
+          </div>
+          <div class="faq-item">
+            <dt>Does it work offline?</dt>
+            <dd>Yes. WorldClock performs all calculations locally in your browser using the <code>Intl.DateTimeFormat</code> API. No internet connection is needed after the page loads.</dd>
+          </div>
+          <div class="faq-item">
+            <dt>Which cities are supported?</dt>
+            <dd>Over 70 major cities across all continents are included, covering every major time zone. Search by city name or country to find the one you need.</dd>
+          </div>
+        </dl>
       </section>
 
     </div>
